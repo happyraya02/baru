@@ -20,7 +20,7 @@ class CreatePaketKreditsTable extends Migration
             $table->integer('uang_muka');
             $table->integer('jumlah_cicilan');
             $table->integer('bunga');
-            $table->integer('niai_cicilan');
+            $table->integer('nilai_cicilan');
             $table->timestamps();
         });
     }
