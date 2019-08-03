@@ -28,12 +28,14 @@
                 </a>
                 @guest
                 @else
+                @role('admin')
                 <a class="navbar-brand" href="{{ url('/cicilan') }}">Cicilan</a>
                 <a class="navbar-brand" href="{{ url('/cash') }}">cash</a>
                 <a class="navbar-brand" href="{{ url('/kredit') }}">kredit</a>
                 <a class="navbar-brand" href="{{ url('/mobil') }}">mobil</a>
                 <a class="navbar-brand" href="{{ url('/paket_kredit') }}">paket_kredit</a>
                 <a class="navbar-brand" href="{{ url('/pembeli') }}">pembeli</a>
+                @endrole
                 @endguest
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
